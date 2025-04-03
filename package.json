@@ -1,0 +1,29 @@
+{
+  "name": "KoreaSeoul",
+  "version": "0.0.1",
+  "description": "한국 서울 지하철 승하차 인원 수를 제공하는 ModelContextServer",
+  "license": "MIT",
+  "author": "Jun-Hee Lee (flyingmt@gmail.com)",
+  "homepage": "",
+  "bugs": "",
+  "type": "module",
+  "bin": {
+    "mcp-server-korea-seoul": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  }
+}
